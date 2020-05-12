@@ -54,12 +54,12 @@ export const BasicData = () => {
   );
 };
 
-const ListMissions = ({ missions }) => {
-  return (
-    <ul>
-      {missions.map(mission, index) => {
-        return <li key={index}>{mission.mission_name}</li>;
-      })}
-    </ul>
-  );
-};
+// const ListMissions = ({ missions }) => {
+//   return (
+//     <ul>
+//       {missions.map(mission, index) => {
+//         return <li key={index}>{mission.mission_name}</li>;
+//       })}
+//     </ul>
+//   );
+// };

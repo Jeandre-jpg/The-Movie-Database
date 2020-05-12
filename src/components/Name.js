@@ -1,7 +1,7 @@
 import React, {useState}from 'react';
 
 export const Name = () => {
-    const[name, setName] = useState("Jeandre Interpolated")
+    const[name, setName] = useState("Jeandre")
     return(
         <div>
             {name}
