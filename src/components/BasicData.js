@@ -1,5 +1,7 @@
 import React, { useEffect, useState} from 'react'
 
+
+
 export const BasicData = () => {
     const [data, setData] = useState([])
 
@@ -53,13 +55,3 @@ export const BasicData = () => {
     </div>
   );
 };
-
-// const ListMissions = ({ missions }) => {
-//   return (
-//     <ul>
-//       {missions.map(mission, index) => {
-//         return <li key={index}>{mission.mission_name}</li>;
-//       })}
-//     </ul>
-//   );
-// };

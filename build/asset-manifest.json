@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTstatic/js/main.6e0fac9f.chunk.js",
+    "main.js.map": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTstatic/js/main.6e0fac9f.chunk.js.map",
+    "runtime-main.js": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTstatic/js/runtime-main.cfac190b.js",
+    "runtime-main.js.map": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTstatic/js/runtime-main.cfac190b.js.map",
+    "static/js/2.0e310aef.chunk.js": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTstatic/js/2.0e310aef.chunk.js",
+    "static/js/2.0e310aef.chunk.js.map": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTstatic/js/2.0e310aef.chunk.js.map",
+    "index.html": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTindex.html",
+    "precache-manifest.c304235b154c7b724508a62d140f5cd0.js": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTprecache-manifest.c304235b154c7b724508a62d140f5cd0.js",
+    "service-worker.js": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTservice-worker.js",
+    "static/js/2.0e310aef.chunk.js.LICENSE.txt": "/Jeandre-jpg/IDV-200-TERM-2-PROJECTstatic/js/2.0e310aef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfac190b.js",
+    "static/js/2.0e310aef.chunk.js",
+    "static/js/main.6e0fac9f.chunk.js"
+  ]
+}
