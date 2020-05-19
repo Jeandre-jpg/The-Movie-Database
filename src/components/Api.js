@@ -1,5 +1,5 @@
 import React from 'react'
-import api from '../api'
+import api from '../components/api.js'
 const IndexPage = () => {
     // Create state variables
     let [responseData, setResponseData] = React.useState('')
