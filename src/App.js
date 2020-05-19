@@ -1,8 +1,14 @@
 import React from "react";
 import "./styles.css";
+import {Welcome} from "./components/Welcome";
+import {Navigation} from "./components";
 
-export const RapidAPI = require('rapidapi-connect');
-  
-fetch('https://rapidapi.com/priaid/api/symptom-checker/endpoints')
-  .then(response => response.json())
-  .then(data => console.log(data));
+export default function App() {
+  return(
+    <div className="App">
+      <Navigation/>
+      <h1>Hello World</h1>
+      <Welcome/>
+    </div>
+  );
+}
