@@ -1,14 +1,14 @@
 import React from "react";
-import "./styles.css";
-import {Welcome} from "./components/Welcome";
-import {Navigation} from "./components";
 
-export default function App() {
-  return(
-    <div className="App">
-      <Navigation/>
-      <h1>Hello World</h1>
-      <Welcome/>
+
+class App extends React.Component {
+  render () {
+    return(
+    <div>
+      <h1>App</h1>
     </div>
-  );
+    )
+  }
 }
+
+export default App;

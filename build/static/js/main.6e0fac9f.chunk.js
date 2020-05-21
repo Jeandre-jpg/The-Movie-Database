@@ -1,2 +1,0 @@
-(this["webpackJsonpidv-term-2"]=this["webpackJsonpidv-term-2"]||[]).push([[0],[,,,function(e,t,n){e.exports=n(4)},function(e,t,n){"use strict";n.r(t);var r=n(0),o=n.n(r),c=n(2),i=n.n(c),s=document.getElementById("root");i.a.render(o.a.createElement(o.a.StrictMode,null),s)}],[[3,1,2]]]);
-//# sourceMappingURL=main.6e0fac9f.chunk.js.map

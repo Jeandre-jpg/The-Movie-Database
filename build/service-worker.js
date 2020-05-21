@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Jeandre-jpg/IDV-200-TERM-2-PROJECTprecache-manifest.c304235b154c7b724508a62d140f5cd0.js"
+  "/Jeandre-jpg/IDV-200-TERM-2-PROJECTprecache-manifest.97854274b220b06a7ed98ae209ebf6f2.js"
 );
 
 self.addEventListener('message', (event) => {
