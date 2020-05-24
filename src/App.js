@@ -1,5 +1,4 @@
 import React from "react";
-import { BasicData } from "./components/BasicData";
 // var Component = React.Component;
 // var CanvasJSReact = require('./canvasjs.react');
 // var CanvasJS = CanvasJSReact.CanvasJS;
@@ -13,7 +12,6 @@ export default function App() {
   return (
     <div className="App">
       <h1>Welcome To World Health</h1>
-      <BasicData />
     </div>
   );
 }
