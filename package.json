@@ -33,7 +33,10 @@
   },
   "description": "<<<<<<< HEAD This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-react": "^7.9.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jeandre-jpg/IDV-200-TERM-2-PROJECT.git"

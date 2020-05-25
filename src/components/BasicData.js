@@ -18,7 +18,7 @@ export const BasicData = () => {
       }
     })
       .then(Response => {
-        return Response.json();
+        return Response.json()
       })
       .then(data => {
         console.log(data);
