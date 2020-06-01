@@ -1,10 +1,8 @@
 import React from 'react';
 
 
-export const Welcome =() =>{
-    return(
-        <div>
-            <h1>Welcome to World Health</h1>
-        </div>
-    )
-}
+
+const Welcome = () => {
+    return <h1 style={{fontfamily: "Montserrat"}}>WORLD HEALTH</h1>
+  }
+export default Welcome;
