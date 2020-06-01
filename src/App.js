@@ -2,9 +2,9 @@ import React from "react";
 import { BasicData } from "./components/BasicData";
 import Sidebar from './components/Sidebar';
 var Component = React.Component;
-var CanvasJSReact = require('./canvasjs.react');
-var CanvasJS = CanvasJSReact.CanvasJS;
-var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+// var CanvasJSReact = require('./canvasjs.react');
+// var CanvasJS = CanvasJSReact.CanvasJS;
+// var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 // import Button from '@material-ui/core/Button';
 // import Menu from '@material-ui/core/Menu';
@@ -73,9 +73,9 @@ class Column extends Component {
 		}
 		return (
 		<div>
-			<CanvasJSChart options = {options}
+			{/* <CanvasJSChart options = {options}
 				onRef={ref => this.chart = ref} 
-			/>
+			/> */}
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
 		</div>
 		);
