@@ -35,7 +35,7 @@ class App extends Component {
       <div>
         <Welcome/>
        <Sidebar items={items} />
-       
+       <Chart/>
      
        </div>
      );

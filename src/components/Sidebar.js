@@ -1,13 +1,13 @@
 import React from 'react'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemText from '@material-ui/core/ListItemText'
 import '../index.css'
-import { Header, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react'
+import { Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
 import Welcome from '../components/Welcome'
 import Chart from '../components/Chart'
+import LineChart from './LineChart'
+import { BasicData } from './BasicData'
 
-const SidebarExampleVisible = () => (
+
+const SidebarVisible  = () => (
   <Sidebar.Pushable as={Segment} >
     <Sidebar
       as={Menu}
@@ -16,31 +16,34 @@ const SidebarExampleVisible = () => (
       inverted
       vertical
       visible
-      width='thin'
-      style={{ backgroundColor: '#aed3f2' }}
+      style={{ backgroundColor: '#aed3f2'}}
     >
       <Menu.Item as='a'>
-        <Icon name='home' />
-        Home
+        <Icon name='stethoscope' />
+      </Menu.Item>
+      <Menu.Item as='a' >
+        <Icon name='chart bar' />
       </Menu.Item>
       <Menu.Item as='a'>
-        <Icon name='gamepad' />
-        Games
+        <Icon name='idea' />
       </Menu.Item>
-      <Menu.Item as='a'>
-        <Icon name='camera' />
-        Channels
+      <Menu.Item as='idea'>
+        <Icon name='user' />
       </Menu.Item>
     </Sidebar>
 
    
-      <Segment basic style={{ height: '50vw'}}>
+      <Segment basic style={{ height: '50vw', width: '35vw', marginLeft: '5vw'}}>
       <Welcome/>
-      <img style={{ marginLeft: '5vw', height: '11vw'}} src='./images/header_image.jpg'/>
-    
+      <h1 style={{textDecoration: 'underline', marginLeft: '45vw', marginTop: '-5vw'}}>More Information</h1>
+      <img style={{ marginLeft: '-5vw', height: '11vw'}} src='./images/header_image.jpg'/>
+    <Chart/>
+    <LineChart/>
+    <BasicData/>
+    <img style={{ marginLeft: '45vw', height: '25vw', marginTop:'-45vw', position: 'relative'}} src='./images/doctors_png.jpg'/>
       </Segment>
     
   </Sidebar.Pushable>
 )
 
-export default SidebarExampleVisible
+export default SidebarVisible
