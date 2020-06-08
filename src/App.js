@@ -5,6 +5,7 @@ import Welcome from './components/Welcome';
 import Chart from './components/Chart';
 import '../src/index.css';
 import { makeStyles } from '@material-ui/core/styles';
+import Footer from './components/Footer';
 var Component = React.Component;
 
 
@@ -36,6 +37,7 @@ class App extends Component {
         <Welcome/>
        <Sidebar items={items} />
        <Chart/>
+       <
      
        </div>
      );

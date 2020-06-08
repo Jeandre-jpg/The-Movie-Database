@@ -5,6 +5,8 @@ import Welcome from '../components/Welcome'
 import Chart from '../components/Chart'
 import LineChart from './LineChart'
 import { BasicData } from './BasicData'
+import SearchBar from './Search'
+
 
 
 const SidebarVisible  = () => (
@@ -38,11 +40,11 @@ const SidebarVisible  = () => (
       <h1 style={{textDecoration: 'underline', marginLeft: '45vw', marginTop: '-5vw'}}>More Information</h1>
       <img style={{ marginLeft: '-5vw', height: '11vw'}} src='./images/header_image.jpg'/>
     <Chart/>
+    <img style={{ marginLeft: '45vw', height: '20vw', marginTop:'-10vw', position: 'relative'}} src='./images/doctors_png.jpg'/>
     <LineChart/>
     <BasicData/>
-    <img style={{ marginLeft: '45vw', height: '25vw', marginTop:'-45vw', position: 'relative'}} src='./images/doctors_png.jpg'/>
+   <SearchBar/>
       </Segment>
-    
   </Sidebar.Pushable>
 )
 
