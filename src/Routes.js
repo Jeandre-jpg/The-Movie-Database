@@ -1,30 +1,14 @@
-import React from 'react';
-import { Switch, Redirect } from 'react-router-dom';
+import Dashboard from "@material-ui/icons/Dashboard";
+import DashboardPage from "views/Dashboard/Dashboard.js";
 
-import { RouteWithLayout } from './components';
-import { Main as MainLayout } from './layouts';
+const dashboardRoutes = [
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    icon: Dashboard,
+    component: DashboardPage,
+    layout: "/admin"
+  }
+];
 
-import {
-  Dashboard as DashboardView
-} from './views';
-
-const Routes = () => {
-  return (
-    <Switch>
-      <Redirect
-        exact
-        from="/"
-        to="/dashboard"
-      />
-      <RouteWithLayout
-        component={DashboardView}
-        exact
-        layout={MainLayout}
-        path="/dashboard"
-      />
-      <Redirect to="/dashboard" />
-    </Switch>
-  );
-};
-
-export default Routes;
+export default dashboardRoutes;
