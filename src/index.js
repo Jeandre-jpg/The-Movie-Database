@@ -1,27 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Container } from "semantic-ui-react";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Sidebar from "./components/Sidebar";
+import * as serviceWorker from './serviceWorker';
+import App from './App';
 
+ReactDOM.render(<App />, document.getElementById('root'));
 
-const App = ({ children }) => (
-  <Container>
-  
-
-    {children}
-  </Container>
-);
-
-
-const styleLink = document.createElement("link");
-styleLink.rel = "stylesheet";
-styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css";
-document.head.appendChild(styleLink);
-
-ReactDOM.render(
-  <App>
-    <Sidebar />
-  </App>,
-  document.getElementById("root")
-);
+serviceWorker.unregister();

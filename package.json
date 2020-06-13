@@ -1,33 +1,15 @@
 {
-  "name": "idv-term-2",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.10.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@trendmicro/react-sidenav": "^0.5.0",
-    "axios": "^0.19.2",
-    "chart.js": "^2.9.3",
-    "react": "^16.13.1",
-    "react-chartjs-2": "^2.9.0",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
-    "react-scripts": "^1.1.1",
-    "react-simple-sidenav": "^2.0.0",
-    "semantic-ui-react": "^0.88.2"
-  },
+  "name": "react-material-dashboard",
+  "author": "DeviasIO",
+  "email": "contact@devias.io",
+  "licence": "MIT",
+  "version": "0.3.0",
+  "private": false,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -41,20 +23,29 @@
       "last 1 safari version"
     ]
   },
-  "description": "<<<<<<< HEAD This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.2.1",
+    "chart.js": "^2.8.0",
+    "clsx": "^1.0.4",
+    "history": "^4.9.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.8.6",
+    "react-perfect-scrollbar": "^1.5.3",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "recompose": "^0.30.0",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.2",
+    "validate.js": "^0.13.1"
+  },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-react": "^7.9.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jeandre-jpg/IDV-200-TERM-2-PROJECT.git"
-  },
-  "author": "JeandrevDe Villiers",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jeandre-jpg/IDV-200-TERM-2-PROJECT/issues"
-  },
-  "homepage": "https://github.com/Jeandre-jpg/IDV-200-TERM-2-PROJECT#readme"
+    "prettier": "^1.17.1",
+    "typescript": "^3.5.1"
+  }
 }

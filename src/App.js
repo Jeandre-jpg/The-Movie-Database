@@ -1,48 +1,38 @@
-import React from "react";
-// import { BasicData } from "./components/BasicData";
-import Sidebar from './components/Sidebar';
-import Welcome from './components/Welcome';
-import Chart from './components/Chart';
-import '../src/index.css';
-import { makeStyles } from '@material-ui/core/styles';
-import Footer from './components/Footer';
-var Component = React.Component;
+import React, { Component } from 'react';
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import { Chart } from 'react-chartjs-2';
+import { ThemeProvider } from '@material-ui/styles';
+import validate from 'validate.js';
+
+import { chartjs } from './helpers';
+import theme from './theme';
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import './assets/scss/index.scss';
+import validators from './common/validators';
+import Routes from './Routes';
 
 
+const browserHistory = createBrowserHistory();
 
+Chart.helpers.extend(Chart.elements.Rectangle.prototype, {
+  draw: chartjs.draw
+});
 
-const items = [
-  { name: 'home', label: 'Home' },
-  {
-    name: 'Graphs',
-    label: 'Graphs',
-  },
-  {
-    name: 'Facts',
-    label: 'Facts',
-    
-  },
+validate.validators = {
+  ...validate.validators,
+  ...validators
+};
 
-  {
-    name: 'More Information',
-    label: 'More Information',
-    
-  },
-]
-
-class App extends Component {
+export default class App extends Component {
   render() {
-     return (
-      <div>
-        <Welcome/>
-       <Sidebar items={items} />
-       <Chart/>
-       <
-     
-       </div>
-     );
-   }
- }
- export default App;
-
-  
+    return (
+      <ThemeProvider theme={theme}>
+        <img src='/images/other/header.jpg'/>
+        <Router history={browserHistory}>
+          <Routes />
+        </Router>
+      </ThemeProvider>
+    );
+  }
+}
