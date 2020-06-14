@@ -19,6 +19,7 @@ import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle";
 import BasicData from "views/Dashboard/app";
+import Carousel from "./header";
 
 const useStyles = makeStyles(styles);
 
@@ -26,6 +27,7 @@ export default function Dashboard() {
   const classes = useStyles();
   return (
     <div>
+      <Carousel/>
       <GridContainer>
         <GridItem xs={12} sm={6} md={3}>
           <Card>
@@ -33,19 +35,15 @@ export default function Dashboard() {
               <CardIcon color="warning">
                 <Icon>content_copy</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>Used Space</p>
+              <p className={classes.cardCategory}>Most Popular Actor:</p>
               <h3 className={classes.cardTitle}>
-                49/50 <small>GB</small>
+                Brad Pitt<br/><small>8.4 voting average</small>
               </h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <Danger>
-                  <Warning />
-                </Danger>
-                <a href="#pablo" onClick={e => e.preventDefault()}>
-                  Get more space
-                </a>
+                <LocalOffer />
+                Most Voted movie: Fight Club
               </div>
             </CardFooter>
           </Card>
@@ -56,13 +54,13 @@ export default function Dashboard() {
               <CardIcon color="success">
                 <Store />
               </CardIcon>
-              <p className={classes.cardCategory}>Revenue</p>
-              <h3 className={classes.cardTitle}>$34,245</h3>
+              <p className={classes.cardCategory}>Top Rated Movie:</p>
+              <h3 className={classes.cardTitle}>The Shawshank Redemption</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <DateRange />
-                Last 24 Hours
+                Release Date: 23 September, 1994
               </div>
             </CardFooter>
           </Card>
@@ -73,13 +71,13 @@ export default function Dashboard() {
               <CardIcon color="danger">
                 <Icon>info_outline</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>Fixed Issues</p>
-              <h3 className={classes.cardTitle}>75</h3>
+              <p className={classes.cardCategory}>Most Popular TV Show:</p>
+              <h3 className={classes.cardTitle}>Law & Order: Special Victims Unit</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <LocalOffer />
-                Tracked from Github
+                Voting Average 7.1
               </div>
             </CardFooter>
           </Card>
@@ -90,13 +88,13 @@ export default function Dashboard() {
               <CardIcon color="info">
                 <Accessibility />
               </CardIcon>
-              <p className={classes.cardCategory}>Followers</p>
-              <h3 className={classes.cardTitle}>+245</h3>
+              <p className={classes.cardCategory}>Top Series Now Playing:</p>
+              <h3 className={classes.cardTitle}>The Hunt</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <Update />
-                Just Updated
+                Release Date: 11 March 2020
               </div>
             </CardFooter>
           </Card>

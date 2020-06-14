@@ -3,11 +3,12 @@ import React, { useState, useEffect } from "react";
 export const BasicData = () => {
   const [loading] = useState(true);
   const [trending, setTrending] = useState([]);
+  const name= '';
 
 
   useEffect(() => {
     console.log("This component renderd");
-    fetch("https://api.themoviedb.org/3/trending/person/week?api_key=03420be3fa8716c7bb9adbd3427279c5")
+    fetch(`https://api.themoviedb.org/3/trending/person/week/results/name?api_key=03420be3fa8716c7bb9adbd3427279c5`)
       .then(Response => {
         return Response.json()
       })

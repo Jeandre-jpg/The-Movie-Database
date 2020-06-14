@@ -34,8 +34,7 @@ const useStyles = makeStyles(styles);
 export default function Admin({ ...rest }) {
   const classes = useStyles();
   const mainPanel = React.createRef();
-  const [color, setColor] = React.useState("blue");
-  const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
+  const [color] = React.useState("blue");
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
 
