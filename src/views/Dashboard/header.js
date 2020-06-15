@@ -1,7 +1,7 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import architecture from 'src/assets/img/architecture-building-business-cinema-436413.jpg';
+import architecture from "assets/img/architecture-building-business-cinema-436413.jpg";
  
 export default class App extends React.Component {
   render() {
@@ -12,7 +12,7 @@ export default class App extends React.Component {
         totalSlides={3}
       >
         <Slider>
-          <Slide index={0}><img src={architecture}/></Slide>
+          <Slide index={0}><img src={architecture} style={{objectFit: "contain", height: "100%", width: "100%"}}/></Slide>
           <Slide index={1}>I am the second Slide.</Slide>
           <Slide index={2}>I am the third Slide.</Slide>
         </Slider>
