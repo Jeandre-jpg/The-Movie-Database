@@ -28,7 +28,7 @@ const sidebarStyle = theme => ({
       width: drawerWidth,
       position: "fixed",
       height: "100%",
-      backgroundColor: "#8D5EF2"
+      backgroundColor: "#A85EF2"
     },
     [theme.breakpoints.down("sm")]: {
       width: drawerWidth,
@@ -72,7 +72,7 @@ const sidebarStyle = theme => ({
       height: "1px",
       right: "15px",
       width: "calc(100% - 30px)",
-      backgroundColor: "#6241D9"
+      backgroundColor: "#05F240"
     }
   },
   logoLink: {

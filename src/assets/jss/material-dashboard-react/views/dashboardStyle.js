@@ -1,5 +1,4 @@
 import {
-  successColor,
   whiteColor,
   grayColor,
   hexToRgb
@@ -7,14 +6,14 @@ import {
 
 const dashboardStyle = {
   successText: {
-    color: successColor[0]
+    color: "#8C0375"
   },
   upArrowCardCategory: {
     width: "16px",
     height: "16px"
   },
   stats: {
-    color: grayColor[0],
+    color: "#F205E2",
     display: "inline-flex",
     fontSize: "12px",
     lineHeight: "22px",
