@@ -612,7 +612,7 @@ h2.title {
 }
 
 .text-warning {
-  color: #ff9800;
+  color: #D90452;
 }
 
 .text-primary {
@@ -892,7 +892,7 @@ h2.title {
 
 .sidebar[data-color="orange"] .nav li.active a,
 .off-canvas-sidebar[data-color="orange"] .nav li.active a {
-  background-color: #ff9800;
+  background-color: #D90452;
   box-shadow: 0 12px 20px -10px rgba(255, 152, 0, 0.28),
     0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(255, 152, 0, 0.2);
 }
@@ -1546,7 +1546,7 @@ fieldset[disabled] .navbar .navbar-nav > li > a.btn.btn-success.active {
 .open > .navbar .navbar-nav > li > a.btn.btn-warning.dropdown-toggle,
 .open > .navbar .navbar-nav > li > a.btn.btn-warning.dropdown-toggle:focus,
 .open > .navbar .navbar-nav > li > a.btn.btn-warning.dropdown-toggle:hover {
-  background-color: #ff9800;
+  background-color: #D90452;
   color: #ffffff;
 }
 
@@ -2114,7 +2114,7 @@ fieldset[disabled] .navbar .navbar-nav > li > a.btn.btn-rose.active {
 
 .btn.btn-reddit,
 .navbar .navbar-nav > li > a.btn.btn-reddit {
-  background-color: #ff4500;
+  background-color: #D90452;
   color: #fff;
   box-shadow: 0 2px 2px 0 rgba(255, 69, 0, 0.14),
     0 3px 1px -2px rgba(255, 69, 0, 0.2), 0 1px 5px 0 rgba(255, 69, 0, 0.12);
@@ -2126,7 +2126,7 @@ fieldset[disabled] .navbar .navbar-nav > li > a.btn.btn-rose.active {
 .navbar .navbar-nav > li > a.btn.btn-reddit:focus,
 .navbar .navbar-nav > li > a.btn.btn-reddit:active,
 .navbar .navbar-nav > li > a.btn.btn-reddit:hover {
-  background-color: #ff4500;
+  background-color: #D90452;
   color: #fff;
   box-shadow: 0 14px 26px -12px rgba(255, 69, 0, 0.42),
     0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 69, 0, 0.2);
@@ -2134,7 +2134,7 @@ fieldset[disabled] .navbar .navbar-nav > li > a.btn.btn-rose.active {
 
 .btn.btn-reddit.btn-simple,
 .navbar .navbar-nav > li > a.btn.btn-reddit.btn-simple {
-  color: #ff4500;
+  color: #D90452;
   background-color: transparent;
   box-shadow: none;
 }

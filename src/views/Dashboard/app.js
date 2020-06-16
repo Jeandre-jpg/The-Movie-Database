@@ -24,12 +24,6 @@ export const BasicData = () => {
     <div>
       <h1>Trending People</h1>
   <pre>{JSON.stringify(trending)}</pre>
-      {loading ? "Loading..." : ""}
-      {trending.length > 0 ? (
-        <setTrending trending={trending} />
-      ) : (
-        "There are no Trending people availible"
-      )} 
     </div>
   );
 };

@@ -16,6 +16,7 @@ import styles from "assets/jss/material-dashboard-react/views/dashboardStyle";
 import BasicData from "views/Dashboard/app";
 import Carousel from "./header";
 import GraphData from './graph';
+import SecondGraph from './DoubleGraph';
 const useStyles = makeStyles(styles);
 
 export default function Dashboard() {
@@ -95,8 +96,8 @@ export default function Dashboard() {
           </Card>
         </GridItem>
       </GridContainer>
-      <BasicData/>
       <GraphData/>
+      <SecondGraph />
     </div>
   );
 }

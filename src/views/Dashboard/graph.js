@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import axios from "axios";
-
+import theater from "assets/img/flo-s-8-cafe-1080953.jpg";
 
 
 // const DataGraph = () => {
@@ -135,13 +135,13 @@ useEffect(() => {
   }, []);
   return (
     <div className="App">
-      <h1>Trending People</h1>
-      <div>
+      <h1 style={{fontFamily: "Roboto Slab, Times New Roman, serif", color: "#ffffff"}}>Trending People of the Week:</h1>
+      <div style={{height: '350px', width: '650px'}}>
         <Line
           data={chartData}
           options={{
             responsive: true,
-            title: { text: "Trendiness Scale", display: true },
+            title: { text: "Level of Trendiness", display: true },
             scales: {
               yAxes: [
                 {
@@ -164,7 +164,7 @@ useEffect(() => {
               ]
             }
           }}
-        />
+        /><img src={theater} style={{backgroundSize: "cover", backgrounRepeat:"no-repeat", maxWidth:"20vw", marginLeft:"115%", marginTop:"-40vw", border:"10px solid #2F1D73", padding:"15px"}} alt="theater"/>
       </div>
     </div>
   );
