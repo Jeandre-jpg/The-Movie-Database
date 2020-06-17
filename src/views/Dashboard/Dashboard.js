@@ -13,7 +13,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardIcon from "components/Card/CardIcon.js";
 import CardFooter from "components/Card/CardFooter.js";
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle";
-import BasicData from "views/Dashboard/app";
+// import BasicData from "views/Dashboard/app";
 import Carousel from "./header";
 import GraphData from './graph';
 import SecondGraph from './DoubleGraph';

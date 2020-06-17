@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Bar, HorizontalBar } from "react-chartjs-2";
-import axios from "axios";
-import theater from "assets/img/flo-s-8-cafe-1080953.jpg";
+import { HorizontalBar } from "react-chartjs-2";
+
 
 
 
@@ -11,12 +10,18 @@ export const DataGraph = () => {
   
     const chart = () => {
       setChartData({
-        labels: ['Ad Astra', 'The Taste of Next Door Sister', 'Artemis Fowl', 'Da 5 Bloods', 'Sonic the Hedgehog'],
         datasets : [
           {
+            labels: ['Ad Astra', 'The Taste of Next Door Sister', 'Artemis Fowl', 'Da 5 Bloods', 'Sonic the Hedgehog'],
             label: 'Popularity of Movies',
             data: [240.611,  224.626, 195.92, 158.609, 156.663],
             backgroundColor: ["#D90452", "#D90452", "#D90452", "#D90452", "#D90452"],
+            borderWidth: 4
+          }, {
+            labels: ['Law & Order: Special Victims Unit', 'The Flash', 'Resurrection: Ertugrul', 'Supernatural', 'The 100'],
+            label: 'Popularity of Movies',
+            data: [183.633, 136.398,122.336, 141.292, 108.961],
+            backgroundColor: ["#0476D9", "#0476D9", "#0476D9", "#0476D9", "#0476D9"],
             borderWidth: 4
           }
         ]

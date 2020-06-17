@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 export const BasicData = () => {
-  const [loading] = useState(true);
   const [trending, setTrending] = useState([]);
   // const name= '';
 
