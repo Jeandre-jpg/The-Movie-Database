@@ -6,22 +6,22 @@ export const Chart = () => {
   const[chartData, setChartData] = useState({});
   const apiKey = '03420be3fa8716c7bb9adbd3427279c5'
   
-  const getTrendigPeople = async () => {
-    const response = await fetch(`http://api.themoviedb.org/3/trending/person/week?&api_key=${apiKey}`) // ES6 Template String
-    const data = await response.json() // Gets JSON data
+  const getTrendingPeople = async () => {
+    const response = await fetch(`http://api.themoviedb.org/3/trending/person/week?&api_key=${apiKey}`)
+    const data = await response.json() 
     return data.results
   }
 
-  const transformData = async () => { // This function return a new object with 2 props (name and popularity)
-    const data = await getTrendigPeople()
+  const transformData = async () => { 
+    const data = await getTrendingPeople()
     return {
-      names: data.map(data => data.name), // Map of Reduce (Map creates/returns a entirely new object)
+      names: data.map(data => data.name), 
       popularity: data.map(data => data.popularity)
     }
   }
  
   const chart = async () => {
-    const { names, popularity } = await transformData() // Deconstruction
+    const { names, popularity } = await transformData()
     return {
       labels: names,
       datasets : [

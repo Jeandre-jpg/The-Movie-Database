@@ -1,36 +1,42 @@
 import React, { useState, useEffect } from "react";
-import { Line } from "react-chartjs-2";
-import theater from "assets/img/flo-s-8-cafe-1080953.jpg";
+import { Bar } from "react-chartjs-2";
 
 export const Chart = () => {
   const[chartData, setChartData] = useState({});
   const apiKey = '03420be3fa8716c7bb9adbd3427279c5'
   
-  const getTrendigPeople = async () => {
-    const response = await fetch(`http://api.themoviedb.org/3/trending/person/week?&api_key=${apiKey}`) // ES6 Template String
-    const data = await response.json() // Gets JSON data
+  const getTrendingPeople = async () => {
+    const response = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}`) 
+    const data = await response.json() 
     return data.results
   }
 
-  const transformData = async () => { // This function return a new object with 2 props (name and popularity)
-    const data = await getTrendigPeople()
+  const transformData = async () => { 
+    const data = await getTrendingPeople()
     return {
-      names: data.map(data => data.name), // Map of Reduce (Map creates/returns a entirely new object)
+      title: data.map(data => data.title), 
       popularity: data.map(data => data.popularity)
     }
   }
  
   const chart = async () => {
-    const { names, popularity } = await transformData() // Deconstruction
+    const { title, popularity } = await transformData()
     return {
-      labels: names,
+      labels: title,
       datasets : [
         {
           label: 'Popularity Scale',
           data: popularity,
-          backgroundColor: ["#F2059F"],
+          backgroundColor: ["#C004D9", "#C004D9", "#C004D9", "#C004D9","#C004D9", "#C004D9", "#C004D9","#C004D9" ,"#C004D9", "#C004D9", "#C004D9","#C004D9","#C004D9","#C004D9","#C004D9","#C004D9","#C004D9","#C004D9","#C004D9","#C004D9"],
           borderWidth: 4
-        }
+        },
+        {
+            label: title,
+            data: popularity,
+            backgroundColor: ["#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C","#03A61C"],
+            borderWidth: 4
+            
+        },
       ]
     }
   }
@@ -42,9 +48,9 @@ export const Chart = () => {
   }, []);
   return (
     <div className="App">
-      <h1 style={{fontFamily: "Roboto Slab, Times New Roman, serif", color: "#ffffff"}}>Trending People of the Week:</h1>
-      <div style={{height: '350px', width: '650px'}}>
-        <Line
+      <h1 style={{fontFamily: "Roboto Slab, Times New Roman, serif", color: "#ffffff"}}>Trending Movies vs. Series of the Week:</h1>
+      <div style={{height: '550px', width: '1250px'}}>
+        <Bar
           data={chartData}
           options={{
             responsive: true,
